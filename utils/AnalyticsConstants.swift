@@ -1,0 +1,126 @@
+//
+//  CitiboxAnalyticsConstants.swift
+//
+//  Created by Jaime Aranaz on 23/12/2021.
+//  Copyright © 2017 Jaime Aranaz. All rights reserved.
+//
+
+import Foundation
+
+enum AnalyticsScreen: String {
+    
+    case loginScreen = "loginScreen"
+    case resetPassword = "resetPassword"
+    case setNewPassword = "setNewPassword"
+    case verificationCodeResetPassword = "verificationCodeResetPassword"
+    case introduceUserAddress = "introduceUserAddress"
+    case locationPermissions = "locationPermissions"
+    case availableLocations = "availableLocations"
+    case nameAndEmailRegistration = "nameAndEmailRegistration"
+    case phoneNumberRegistration = "phoneNumberRegistration"
+    case verificationCodeRegistration = "verificationCodeRegistration"
+    case setNewPasswordRegistration = "setNewPasswordRegistration"
+    case home = "home"
+    case menu = "menu"
+    case profile = "profile"
+    case transactions = "transactions"
+    case settings = "settings"
+    case myLocations = "myLocations"
+    case helps = "helps"
+    case pickTransactionUp = "pickTransactionUp"
+    case cameraPermissions = "cameraPermissions"
+    case scanBoxCode = "scanLockerCode"
+    case openBox = "openLocker"
+    case serviceRating = "serviceRating"
+    case serviceRatingNegative = "serviceRatingNegative"
+    case parcelInfo = "parcelInfo"
+    case nps = "NPS"
+    case npsNegative = "NPSNegative"
+    case notificationPermissions = "notificationPermissions"
+    case resendVerificationCodeResetPassword = "resendVerificationCodeResetPassword"
+    case leads = "leads"
+    case registrationTermsAndConditions = "registrationTermsAndConditions"
+    case validateLockLetter = "validateLockLetter"
+    case pickUpHelp = "pickUpHelp"
+    case lockResetCode = "lockResetCode"
+    case lockResetNextCode = "lockResetNextCode"
+    case lockPreviousResetCode = "lockPreviousResetCode"
+    case lockNextCode = "lockNextCode"
+    case supportPickUp = "supportPickUp"
+}
+
+enum AnalyticsEvent: String {
+    
+    case showPassword = "showPassword"
+    case hidePassword = "hidePassword"
+    case editProfileData = "editProfileData"
+    case editPushNotifications = "editPushNotifications"
+    case changeLocation = "changeLocation"
+    case goBack = "goBack"
+    case scannedBoxCode = "scannedLockerCode"
+    case help = "help"
+    case selectServiceRating = "selectServiceRating"
+    case selectRatingNegativeComment = "selectRatingNegativeComment"
+    case sendRatingNegativeComments = "sendRatingNegativeComments"
+    case selectNPS = "selectNPS"
+    case sendNPSRating = "sendNPSRating"
+    case selectNPSNegativeComment = "selectNPSNegativeComment"
+    case sendNPSNegativeComments = "sendNPSNegativeComments"
+    case goToBackground = "goToBackground"
+    case editPhoneLogin = "editPhoneLogin"
+    case editPasswordLogin = "editPasswordLogin"
+    case editPhoneResetPassword = "editPhoneResetPassword"
+    case editPhoneResendVerificationCode = "editPhoneResendVerificationCode"
+    case editPassword = "editPassword"
+    case setNewPassword = "setNewPassword"
+    case editUserAddress = "editUserAddress"
+    case nameTextfieldRegistration = "nameTextfieldRegistration"
+    case emailTextfieldRegistration = "emailTextfieldRegistration"
+    case phoneNumberTextfieldRegistration = "phoneNumberTextfieldRegistration"
+    case setNewPasswordTextfieldRegistration = "setNewPasswordTextfieldRegistration"
+    case verificationCodeRegistration = "verificationCodeRegistration"
+    case sendLead = "sendLead"
+    case editAdvertisements = "editAdvertisements"
+    case unauthorizedError = "unauthorizedError"
+    case home = "home"
+    case pickedTransactionUp = "pickedTransactionUp"
+    case seeLockCode = "seeLockCode"
+    case ignoreRating = "ignoreRating"
+    case pickUpHelp = "pickUpHelp"
+    case doorNotOpened = "doorNotOpened"
+    case openDoorAgain = "openDoorAgain"
+    case otherIncident = "otherIncident"
+    case cancelPickUpHelp = "cancelPickUpHelp"
+    case confirmLockLetter = "confirmLockLetter"
+    case contactSupport = "chatSupport"
+    case goBackFromSupport = "goBackFromSupport"
+}
+
+enum AnalyticsAttribute: String {
+    
+    case textfield = "textfield"
+    case enabled = "enabled"
+    case type = "type"
+    case screen = "screen"
+    case isRightBoxCode = "isRightLockerCode"
+    case numberOfStarts = "numberOfStarts"
+    case message = "message"
+    case comment = "comment"
+    case correct = "correct"
+    case number = "number"
+    case numberOfTransactions = "numberOfTransactions"
+    case transactionState = "transactionState"
+    case lockType = "lockType"
+    case location = "location"
+    case attempts = "attempts"
+}
+
+enum AnalyticsValue: String {
+    
+    case pickUp = "pickUp"
+    case scannedBoxCode = "scannedLockerCode"
+    case setNewPasswordReset = "setNewPasswordReset"
+    case name = "name"
+    case email = "email"
+    case validateLockLetter = "validateLockLetter"
+}
