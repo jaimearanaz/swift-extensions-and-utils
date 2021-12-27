@@ -8,7 +8,7 @@
 import Foundation
 
 // @see https://www.toptal.com/ios/swift-tutorial-introduction-to-mvvm
-class Dynamic<T> {
+class Box<T> {
     
     typealias Listener = (T) -> ()
     var listeners = [Listener]()
@@ -32,6 +32,8 @@ class Dynamic<T> {
         listeners = [Listener]()
     }
     
+    // what happens with listeners that are nil?
+    // are they called? will fail?
     var value: T {
         didSet {
             _ = self.listeners.map({
